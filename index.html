@@ -3,38 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marmi e Pietre d'Eccellenza</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script> </head>
-<body class="bg-gray-50 text-gray-800">
+    <title>Busoni Marmi | Lavorazione marmo e pietra su misura</title>
+    <meta name="description" content="Busoni Marmi - lavorazione artigianale di marmo e pietra su misura. Piani cucina, lapidi, scale, pavimenti e lavorazioni personalizzate.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+            --grey: #f4f4f4;
+        }
 
-    <header class="p-10 text-center bg-white shadow-sm">
-        <h1 class="text-4xl font-serif font-bold uppercase tracking-widest">Marmi & Pietre della Tua Azienda</h1>
-        <p class="mt-4 text-gray-600 italic">Lavorazioni artigianali e materiali pregiati dal 19XX</p>
-    </header>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--grey);
+            color: #333;
+            line-height: 1.6;
+        }
 
-    <section class="p-8">
-        <h2 class="text-2xl font-bold mb-6 border-b-2 border-gray-300 pb-2">Il Nostro Catalogo Materiali</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white p-2 rounded shadow hover:shadow-lg transition">
-                <img src="tuo-marmo-1.jpg" alt="Marmo di Carrara" class="w-full h-64 object-cover rounded">
-                <h3 class="p-4 font-bold text-center">Marmo di Carrara Bianco</h3>
+        /* Hero Section con Immagine di Sfondo */
+        header {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1615529151169-7b1ff50dc7f2?q=80&w=2000') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin: 0;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            border-top: 2px solid var(--gold);
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: -50px auto 40px;
+            background: white;
+            padding: 60px 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--dark);
+        }
+
+        /* Griglia Lavorazioni */
+        .grid-lavorazioni {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--grey);
+            border-bottom: 4px solid var(--gold);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+            color: var(--dark);
+        }
+
+        /* Sezione Contatti */
+        .contatti-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .contatto-item a {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin-top: 60px;
+        }
+
+        /* Bottone Call to Action */
+        .btn-call {
+            background: var(--gold);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        .btn-call:hover {
+            background: #b08d48;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            section { margin: 20px auto; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Busoni Marmi</h1>
+    <p>L'arte della pietra dal blocco grezzo al dettaglio di lusso.</p>
+    <a href="tel:0543912068" class="btn-call">Richiedi Preventivo</a>
+</header>
+
+<section id="chi-siamo">
+    <h2 class="section-title">Eccellenza Artigiana</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+        Busoni Marmi è un’impresa artigiana specializzata nella lavorazione del marmo e della pietra naturale su misura. 
+        Dal <strong>19XX</strong>, uniamo la precisione della tecnologia moderna alla cura manuale tipica del Made in Italy.
+    </p>
+</section>
+
+<section id="lavorazioni">
+    <h2 class="section-title">Le Nostre Specialità</h2>
+    <div class="grid-lavorazioni">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800" alt="Piani Cucina">
+            <div class="card-content">
+                <h3>Piani Cucina</h3>
+                <p>Top in marmo e granito resistenti e di design unico.</p>
             </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505332512411-cc230553755c?q=80&w=800" alt="Scale">
+            <div class="card-content">
+                <h3>Scale e Gradini</h3>
+                <p>Soluzioni monumentali per interni ed esterni.</p>
             </div>
-    </section>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1596272875729-ed2ff7d6d9c5?q=80&w=800" alt="Arte Funeraria">
+            <div class="card-content">
+                <h3>Arte Funeraria</h3>
+                <p>Lapidi a muro e a terra realizzate con dignità e rispetto.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1584622781564-1d9876a13d00?q=80&w=800" alt="Lavandini">
+            <div class="card-content">
+                <h3>Lavandini e Bagni</h3>
+                <p>Blocchi massicci scavati per un bagno da spa.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="p-8 bg-gray-100">
-        <h2 class="text-2xl font-bold mb-6">Lavorazioni e Finiture</h2>
-        <ul class="space-y-4">
-            <li class="flex items-center space-x-4 bg-white p-4 rounded shadow-sm">
-                <img src="lavorazione-lucida.jpg" class="w-20 h-20 rounded-full object-cover">
-                <div>
-                    <strong class="text-lg">Lucidatura a Specchio</strong>
-                    <p class="text-sm text-gray-500">Ideale per interni eleganti e piani cucina.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
+<section id="contatti">
+    <h2 class="section-title">Contatti</h2>
+    <div class="contatti-box">
+        <div class="contatto-item">
+            <p>Ufficio</p>
+            <a href="tel:0543912068">0543 912068</a>
+        </div>
+        <div class="contatto-item">
+            <p>Sauro Busoni</p>
+            <a href="tel:3391113841">339 1113841</a>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+        <p><strong>Sede Operativa:</strong><br>
+        Via Vessa Brioli 36A, Italia</p>
+    </div>
+</section>
+
+<footer>
+    <p>© Busoni Marmi - Lavorazione Artigianale Pietre Naturali</p>
+    <p style="font-size: 0.8rem; color: #666;">Creato con passione per l'artigianato</p>
+</footer>
 
 </body>
 </html>
