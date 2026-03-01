@@ -2,97 +2,39 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Busoni Marmi | Lavorazione marmo e pietra su misura</title>
-    <meta name="description" content="Busoni Marmi - lavorazione artigianale di marmo e pietra su misura. Piani cucina, lapidi, scale, pavimenti e lavorazioni personalizzate.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: #2b2b2b;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        section {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 40px 20px;
-        }
-        h2 {
-            color: #2b2b2b;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        a {
-            color: #2b2b2b;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background: #2b2b2b;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
+    <title>Marmi e Pietre d'Eccellenza</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script> </head>
+<body class="bg-gray-50 text-gray-800">
 
-<header>
-    <h1>Busoni Marmi</h1>
-    <p>Lavorazione artigianale di marmo e pietra su misura</p>
-</header>
+    <header class="p-10 text-center bg-white shadow-sm">
+        <h1 class="text-4xl font-serif font-bold uppercase tracking-widest">Marmi & Pietre della Tua Azienda</h1>
+        <p class="mt-4 text-gray-600 italic">Lavorazioni artigianali e materiali pregiati dal 19XX</p>
+    </header>
 
-<section>
-    <h2>Chi siamo</h2>
-    <p>
-        Busoni Marmi è un’impresa artigiana specializzata nella lavorazione del marmo e della pietra naturale su misura.
-        Realizziamo ogni progetto secondo le esigenze del cliente, unendo esperienza, precisione e materiali di qualità.
-    </p>
-</section>
+    <section class="p-8">
+        <h2 class="text-2xl font-bold mb-6 border-b-2 border-gray-300 pb-2">Il Nostro Catalogo Materiali</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-2 rounded shadow hover:shadow-lg transition">
+                <img src="tuo-marmo-1.jpg" alt="Marmo di Carrara" class="w-full h-64 object-cover rounded">
+                <h3 class="p-4 font-bold text-center">Marmo di Carrara Bianco</h3>
+            </div>
+            </div>
+    </section>
 
-<section>
-    <h2>Le nostre lavorazioni</h2>
-    <ul>
-        <li>Piani cucina su misura</li>
-        <li>Lapidi a muro e a terra</li>
-        <li>Battiscopa</li>
-        <li>Lastre per pavimenti</li>
-        <li>Scale</li>
-        <li>Banchine</li>
-        <li>Lavandini</li>
-        <li>Altre lavorazioni personalizzate su richiesta</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Contatti</h2>
-    <p><strong>Telefono aziendale:</strong> <a href="tel:0543912068">0543 912068</a></p>
-    <p><strong>Sauro Busoni:</strong> <a href="tel:3391113841">339 1113841</a></p>
-    <p>
-        <strong>Indirizzo:</strong>
-        <a href="https://www.google.com/maps/search/?api=1&query=Via+Vessa+Brioli+36A" target="_blank">
-            Via Vessa Brioli 36A
-        </a>
-    </p>
-    <p>Contattaci per informazioni e preventivi.</p>
-</section>
-
-<footer>
-    <p>© Busoni Marmi - Tutti i diritti riservati</p>
-</footer>
+    <section class="p-8 bg-gray-100">
+        <h2 class="text-2xl font-bold mb-6">Lavorazioni e Finiture</h2>
+        <ul class="space-y-4">
+            <li class="flex items-center space-x-4 bg-white p-4 rounded shadow-sm">
+                <img src="lavorazione-lucida.jpg" class="w-20 h-20 rounded-full object-cover">
+                <div>
+                    <strong class="text-lg">Lucidatura a Specchio</strong>
+                    <p class="text-sm text-gray-500">Ideale per interni eleganti e piani cucina.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
 </body>
 </html>
